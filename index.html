@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>CPU SCHEDULEX</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">CPU SCHEDULEX</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="docs.html">DOCS</a></li>
+                    <li><a href="./backend/ganttcharts.html">SIMULATOR</a></li>
+
+
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>
+                CPU SCHEDULEX
+            </h1>
+            <p>
+                Welcome to the "CPU SCHEDULEX" - An Engaging Experience to Master Scheduling Algorithms with Fun and Interactive Learning!
+
+                <br>Start simulation now.
+            </p>
+            <a href="docs.html" class="hero-btn">GET STARTED</a>
+        </div>
+    </section>
+
+
+
+
+    <section class="cta" data-aos="zoom-in-up">
+        <h1>Learn about various types of algorithms<br> Click the link below!</h1>
+        <a href="./docs.html" class="hero-btn">Click Here</a>
+    </section>
+
+    <section class="footer">
+        <!-- <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur eveniet eaque provident error velit totam quos. Corrupti sunt omnis<br>  eligendi ut enim, sed magnamquo laboriosam, aspernatur nulla ipsum commodi itaque accusantium sapiente!</p> -->
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/chinmay-kulkarni19/"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>Made With Love!!</p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        function gotoDocs() {
+            location.href = ("docs.html");
+        }
+    </script>
+
+    <!-- animation for cards -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100, // offset (in px) from the original trigger point
+            duration: 800
+        }
+        );
+    </script>
+</body>
+
+</html>

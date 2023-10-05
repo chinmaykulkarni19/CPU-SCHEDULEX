@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./docs.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>CPU SCHEDULEX</title>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">CPU SCHEDULEX</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-window-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="docs.html">DOCS</a></li>
+                    <!-- <li><a href="blog.html">BLOG</a></li> -->
+                    <li><a href="./backend/ganttcharts.html">SIMULATOR</a></li>
+                    
+
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Documentation</h1>
+
+    </section>
+
+
+
+    <section class="container_docs">
+        <h1>What is CPU Scheduling?</h1>
+        <p>CPU scheduling is the process of choosing which process gets to use the CPU for execution from the ready queue whenever it's available. The CPU scheduler makes this selection from the processes in memory that are ready to run.
+        </p>
+    </section>
+
+    <section class="container_docs" data-aos="zoom-in-up">
+        <h1>Why CPU Scheduling?</h1>
+        <p>In a typical process, there's both I/O time and CPU time. In a uni-programming system like MS-DOS, CPU waits during I/O, which is inefficient. Multi-programming systems let one process use the CPU while another waits for I/O, thanks to process scheduling.<br><br>
+
+        </p>
+    </section>
+
+    <section class="container_docs special" data-aos="zoom-in-up">
+        <h1>Important CPU scheduling Terminologies</h1>
+        <!-- <p>A typical process involves both I/O time and CPU time. In a uni programming system like MS-DOS, time spent waiting for I/O is wasted and CPU is free during this time. In multi programming systems, one process can use CPU while another is waiting for I/O. This is possible only with process scheduling.<br><br> -->
+        <li><strong>Burst Time/Execution Time:</strong> It is a time required by the process to complete execution. It
+            is also called running time.</li>
+        <li><strong>Arrival Time:</strong> when a process enters in a ready state</li>
+        <li><strong>Finish Time:</strong> when process complete and exit from a system</li>
+        <li><strong>Multiprogramming:</strong> A number of programs which can be present in memory at the same time.
+        </li>
+        <li><strong>Jobs:</strong> It is a type of program without any kind of user interaction.</li>
+        <li><strong>User:</strong> It is a kind of program having user interaction.</li>
+        <li><strong>Process:</strong> It is the reference that is used for both job and user.</li>
+        <li><strong>CPU/IO burst cycle:</strong> Characterizes process execution, which alternates between CPU and I/O
+            activity. CPU times are shorter than the time of I/O.</li>
+
+        </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="container_docs" data-aos="zoom-in-up">
+        <h1>Types of CPU Scheduling</h1>
+        <p>There is mainly two major types of CPU Scheduling which is listed below.There is sub-types of this algorithm
+            also. we have discussed all algorithm in details below. </p>
+        <li>Preemptive Algorithm</li>
+        <li>Non Preemptive Algorithm</li>
+        <br>
+
+        <p><strong class="bold">Preemptive Scheduling</strong><br><br>
+            In Preemptive Scheduling, the tasks are mostly assigned with their priorities. Sometimes it is important to
+            run a task with a higher priority before another lower priority task, even if the lower priority task is
+            still running. The lower priority task holds for some time and resumes when the higher priority task
+            finishes its execution.<br><br>
+            <br>
+            <strong class="bold">Non-Preemptive Scheduling</strong><br><br>
+            In this type of scheduling method, the CPU has been allocated to a specific process. The process that keeps
+            the CPU busy will release the CPU either by switching context or terminating. It is the only method that can
+            be used for various hardware platforms. That’s because it doesn’t need special hardware (for example, a
+            timer) like preemptive scheduling.
+        </p>
+
+
+
+    </section>
+
+
+    <section class="container_docs" data-aos="zoom-in-up">
+        <h1>Types of CPU scheduling Algorithm</h1>
+        <p>There are mainly six types of process scheduling algorithm</p>
+        <!-- <lo> -->
+        <li>First Come First Serve (FCFS)</li>
+        <li>Shortest-Job-First (SJF) Scheduling</li>
+        <li>Shortest Remaining Time</li>
+        <li>Priority Scheduling</li>
+        <li>Round Robin Scheduling</li>
+        <li>Multilevel Queue Scheduling</li>
+        <br>
+    </section>
+
+
+    <section class="footer">
+
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/chinmay-kulkarni19/"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p>Made With Love!!</p>
+    </section>
+
+    
+
+    
+
+
+    <!-- For the animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200, // offset (in px) from the original trigger point
+            duration: 800
+        });
+    </script>
+</body>
+
+</html>
